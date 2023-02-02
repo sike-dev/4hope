@@ -7,7 +7,7 @@ const Contact = () => {
         <h1 className="text-2xl font-bold text-center p-4">
           Let`&apos;`s work together
         </h1>
-        <form className="max-w-[600px] m-auto">
+        <form className="border shadow-lg p-3">
           <div className="grid grid-cols-2 gap-2">
             <input
               className="border shadow-lg p-3"
