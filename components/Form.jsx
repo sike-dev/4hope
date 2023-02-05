@@ -6,7 +6,7 @@ import { Button } from "@mui/material";
 
 const FormDetails = () => {
   return (
-    <div className="max-w-[1240px] m-auto p-4 h-screen">
+    <div className="max-w-[1240px] m-auto mt-28 p-4 h-screen">
       <h1 className="text-2xl font-bold text-center p-8">
         Fill in your basic details
       </h1>

@@ -4,7 +4,7 @@ import Hero from "../components/Hero"
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Head>
         <title>4-Hope</title>
         <meta name="description" content="4-Hope website" />
@@ -12,7 +12,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero heading = "4hope" message = "Build the next world-class resume using our Resume builder."/>
-      <FormDetails/>
     </div>
   );
 }

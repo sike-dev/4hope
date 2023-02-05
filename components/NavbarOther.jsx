@@ -13,19 +13,6 @@ const Navbar = () => {
     setNav(!nav);
   };
 
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("#000000");
-        setTextColor("#000000");
-      } else {
-        setColor("#000000");
-        setTextColor("#000000");
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
-
   return (
     <div
       style={{ backgroundColor: `${color}` }}
