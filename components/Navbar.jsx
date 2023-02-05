@@ -3,28 +3,16 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import mypic from "../assets/in.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
   const [textColor, setTextColor] = useState("white");
-
+  const router = useRouter();
   const handleNav = () => {
     setNav(!nav);
   };
-
-  useEffect(() => {
-    const changeColor = () => {
-      if (window.scrollY >= 90) {
-        setColor("#000000");
-        setTextColor("#000000");
-      } else {
-        setColor("#000000");
-        setTextColor("#000000");
-      }
-    };
-    window.addEventListener("scroll", changeColor);
-  }, []);
 
   return (
     <div
@@ -36,18 +24,22 @@ const Navbar = () => {
           {/* <h1 style={{ color: "#1f2b8eff" }} className="font-bold text-4xl">
             Hope
           </h1> */}
-          <div className="flex justify-center">
-            <h2 className="text-3xl font-bold textstyle2">4</h2>
-            <h2 className=" text-3xl font-bold textstyle1 text-blue-900">
-              hope
-            </h2>
-            <Image
-              src={mypic}
-              alt="Picture of the author"
-              width={30}
-              height={25}
-            />
-          </div>
+          {router.pathname === "/" ? (
+            <></>
+          ) : (
+            <div className="flex justify-center">
+              <h2 className="text-3xl font-bold textstyle2">4</h2>
+              <h2 className=" text-3xl font-bold textstyle1 text-blue-900">
+                hope
+              </h2>
+              <Image
+                src={mypic}
+                alt="Picture of the author"
+                width={30}
+                height={25}
+              />
+            </div>
+          )}
         </Link>
 
         <ul style={{ color: "#1f2b8eff" }} className="hidden sm:flex">

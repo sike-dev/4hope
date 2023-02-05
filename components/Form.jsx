@@ -22,9 +22,9 @@ const FormDetails = () => {
             terms: false,
           }}
         >
-          <Form className="grid grid-cols-1">
+          <Form className="grid grid-cols-1 mt-5">
             <Field
-              className="border-2 shadow-lg ml-10 mr-10 mb-5"
+              className="border-2 shadow-lg mt-5 ml-10 mr-10 mb-5"
               name="fullname"
               component={TextField}
               label="Full Name"
