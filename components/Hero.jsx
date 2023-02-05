@@ -4,8 +4,7 @@ import Image from "next/image";
 import mypic from "../assets/in.png";
 const Hero = ({ heading, message }) => {
   return (
-    <div className="h-screen mb-12 bg-current bg-center bg-cover custom-img pt-28 overflow-hidden">
-      {/* overlay */}
+    <div className="h-screen bg-center bg-cover  pt-28 overflow-hidden">
       <div className=" flex flex-column justify-center py-5">
         <Image
           src={mypic}
