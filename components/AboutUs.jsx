@@ -37,18 +37,19 @@ const AboutUs = () => {
           <h3 className="font-bold">
             4Hope.in is a single window platform to connect global workforce and
             Human resource department to share and express more open, to create
-            economic opportunities. The name '4Hope.in' derived from a thought
-            of approaching life in a goal oriented way.
+            economic opportunities. The name &quot;4Hope.in&quot; derived from a
+            thought of approaching life in a goal oriented way.
           </h3>
           <br />
-          The meaning of "4" represents Stable, Loyal, Trustworthy, Practical,
-          Friendly, Strong, Endurance conscientiousness, Responsibility, and
-          Stability. Hope is a given name derived from the Middle English hope,
-          ultimately from the Old English word 'hopian' referring to a positive
-          expectation or to the theological virtue of hope. It was used as a
-          virtue name by the Puritans. ".in" for the representation of India on
-          patriotic feeling of love, loyalty, devotion, support and pride
-          directed towards own country.
+          The meaning of &quot;4&quot; represents Stable, Loyal, Trustworthy,
+          Practical, Friendly, Strong, Endurance conscientiousness,
+          Responsibility, and Stability. Hope is a given name derived from the
+          Middle English hope, ultimately from the Old English word
+          &quot;hopian&quot; referring to a positive expectation or to the
+          theological virtue of hope. It was used as a virtue name by the
+          Puritans. &quot;.in&quot; for the representation of India on patriotic
+          feeling of love, loyalty, devotion, support and pride directed towards
+          own country.
           <br />
           <hr />
           <h3 className="font-bold py-2">Vision, Mission and Values</h3>
@@ -57,9 +58,9 @@ const AboutUs = () => {
           workforce
           <br />
           <h3 className="py-2">Mission</h3>
-          Mission Create a platform to connect world's workforce to create a
-          win-win situation.
-          <h3 className="py-2">Values</h3>Mnemonic "HOPIAN"
+          Mission Create a platform to connect world&apos;s workforce to create
+          a win-win situation.
+          <h3 className="py-2">Values</h3>Mnemonic &quot;HOPIAN&quot;
           <ul>
             <li>H - Hopeful</li>
             <li>O - Optimistic</li>
