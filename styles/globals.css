@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg{
+  background-color: #ffc92b;
+}
 .buttonstyle {
   background-color: #1f2b8eff;
 }
