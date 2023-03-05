@@ -29,9 +29,16 @@ const AboutUs = () => {
         <div className="w-96 flex flex-col justify-center" ref={ref} />
       </div>
       <div>
-        <h2 className="text-4xl font-bold px-4 pb-1 border-8 border-opacity-100 border-blue-900 max-w-min">
-          About Us
-        </h2>
+        <div class=" font-black">
+          <a href="#" class="active">
+            Home
+          </a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+          <a href="#">Link 4</a>
+        </div>
+        <h2 className="text-4xl font-bold px-4 pb-1  max-w-min">About Us</h2>
 
         <div className="ml-5 text-sm px-4 box-border border-8 border-opacity-100 border-pink-500">
           <h3 className="font-bold">

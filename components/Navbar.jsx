@@ -4,7 +4,8 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import mypic from "../assets/in.png";
 import Image from "next/image";
 import { useRouter } from "next/router";
-
+import CallTwoToneIcon from "@mui/icons-material/CallTwoTone";
+import MailOutlineTwoToneIcon from "@mui/icons-material/MailOutlineTwoTone";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
@@ -70,37 +71,56 @@ const Navbar = () => {
           )}
         </div>
         {/* Mobile Menu */}
+
         <div
           className={
             nav
-              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
-              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-white text-center ease-in duration-300"
           }
         >
-          <ul>
+          <ul className="font-calibri">
             <li
               onClick={handleNav}
-              className="p-4 text-4xl  hover:text-gray-500"
+              className="p-4 text-2xl  hover:text-gray-500"
             >
-              <Link href="/">Home</Link>
+              <Link href="/">CENTERS OF EXCELLENCE</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-blue-900 hover:text-gray-500"
+              className="p-4 text-2xl text-blue-900 hover:text-gray-500"
             >
-              <Link href="/#gallery">Gallery</Link>
+              <Link href="/#gallery">NATIONAL WORKFORCE</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-blue-900 hover:text-gray-500"
+              className="p-4 text-2xl text-blue-900 hover:text-gray-500"
             >
-              <Link href="/about">About Us</Link>
+              <Link href="/about">INTERNATIONAL</Link>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl text-blue-900 hover:text-gray-500"
+              className="p-4 text-3xl text-blue-900 hover:text-gray-500"
             >
-              <Link href="/contact">Contact</Link>
+              <div className="bg-pink-500 rounded-md text-white ">
+                <CallTwoToneIcon
+                  className="pr-4 "
+                  sx={{ fontSize: "50px" }}
+                ></CallTwoToneIcon>
+                <Link href="tel:8095015040">8095015040</Link>
+              </div>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl text-blue-900 hover:text-gray-500"
+            >
+              <div className="bg-pink-500 rounded-md text-white ">
+                <MailOutlineTwoToneIcon
+                  className="pr-4 "
+                  sx={{ fontSize: "50px" }}
+                ></MailOutlineTwoToneIcon>
+                <Link href="tel:8095015040">admin@4hope.in</Link>
+              </div>
             </li>
           </ul>
         </div>
@@ -108,6 +128,5 @@ const Navbar = () => {
     </div>
   );
 };
-
 
 export default Navbar;
